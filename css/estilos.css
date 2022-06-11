@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --font-general: 'Roboto', sans-serif;
+    --font-titulo: 'DM Sans', sans-serif;
+    --font-weight-general: 400;
+    --hr-linea: 1px solid #6d6d6d;
+    --font-cursiva: 'Satisfy', cursive;
+}
+
+
+
+@font-face {
+    font-family: 'mirabella';
+    src: url('../font/Mirrabella.ttf');
+     
+}
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #f3f3f3;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+
+.logo {
+    width: 100%;
+}
+
+.logo-novia {
+    right: 50%;
+    margin-right: 35px;
+    text-align: right;
+}
+.logo-novia, .logo-novio {
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    z-index: 3;
+}
+.logo-novia, .logo-novio, .header-nombres div, .wrap-novios, .propuesta h2, .wrap-info-texto, .propuesta .comillas:before, .propuesta .comillas:after, #photos h2, .mesa-container h2, .recomendaciones-section h2 a {
+    font-family: "mirabella";
+}
+
+.logo img {
+    width: 56px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.logo-novio {
+    left: 50%;
+    margin-left: 35px;
+}
+.logo-novia, .logo-novio {
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    z-index: 3;
+}
+
+.img_novios{
+    width: 100%;
+    height: auto;
+
+}
+
+.img_novios img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nos_casamos{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+ 
+}
+.nos_casamos h1{
+    padding: 10px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--font-cursiva);
+}
+
+.nos_casamos p{
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--font-general);
+    font-weight: var(--font-weight-general);
+    margin-bottom: 15px;
+}
+
+.nos_casamos img{
+    display: flex;
+    border-radius: 50%;
+    width: 300px;
+   height: 300px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: auto;    
+}
+.wrap-fecha{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    margin: auto;
+
+}
+
+
+.wrap-fecha p{
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--font-cursiva);
+ 
+    margin-bottom: 15px;
+}
+
+.contador-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    border: 1px solid #ccb186;
+    margin-top: 50px;
+    position: relative;
+}
+
+.contador-container:before {
+    content: "Faltan";
+    background:  #f1f1f1;
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    font-size: 20px;
+    left: 50%;
+    width: 140px;
+    margin-left: -70px;
+    letter-spacing: 6px;
+}
+
+.contador-container:after {
+    content: "";
+    border: 1px solid #ccb186;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.simply-section{
+    background: #ccb186;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simply-amount{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.simply-word{
+    font-size: 20px;
+}
+
+
+.lugares{
+    display: flex;
+    position: relative;
+    grid-template-columns: 2 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+
+
+.btn-ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #ccb186 ;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: var(--font-general);
+    border: solid 1px #eebd62;
+}
+.btn-icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+.content-lugar{
+margin-top: 40px;
+padding: 10px 30px;
+
+}
+
+.titulo{
+    font-size: 30px;
+   font-family: var(--font-cursiva);
+    
+    margin-bottom: 15px;
+
+}
+
+
+p{
+    font-size: 17px;
+    font-family: var(--font-general);
+    margin-bottom: 15px;
+}
+
+.separador::before{
+   position: absolute;
+    content: "";
+    width: 1px;
+    height: 70%;
+    top: 40%;
+    left: 50%;
+    background-color: #ccb186;
+    transform: translate(-50%, -50%);
+   
+}
+
+.form{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+
+}
+
+form p{
+    width: 90%;
+}
+
+form h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  max-width: 90%;
+    height: 100%;
+    background-color: #fff;
+    height: 500px;  
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-bottom: 80px;
+
+}
+   
+.icon_whatsapp{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #23d132;
+}
+
+
+input{
+    display: flex;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccb186;
+    color: #6d6d6d;
+    font-size: 17px;
+    font-family: var(--font-general);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 90%;
+    height: 200px;
+    border: 1px solid #ccb186;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: var(--font-general);
+    margin-bottom: 15px;
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    background-color: #ccb186;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    color:#000;
+    font-size: 20px;
+    font-family: var(--font-general);
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+
+footer{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font-general);
+    font-weight: var(--font-weight-general);
+    height: 50px;
+    background-color: #597480;
+}
