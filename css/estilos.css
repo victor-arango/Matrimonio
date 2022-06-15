@@ -310,6 +310,7 @@ input{
     display: flex;
     width: 90%;
     height: 30px;
+    margin-top: 20px;
     border-radius: 5px;
     border: 1px solid #ccb186;
     color: #6d6d6d;
@@ -329,7 +330,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 10px;
     width: 90%;
     height: 200px;
     border: 1px solid #ccb186;
@@ -360,6 +361,11 @@ button{
     padding: 10px;
 }
 
+.importante{
+    color: red;
+    font-size: 14px;
+    
+}
 
 
 footer{
