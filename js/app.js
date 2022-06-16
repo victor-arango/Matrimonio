@@ -14,10 +14,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 // const buttonForm = document.querySelector('#button_form');
 const formulario = document.querySelector('#confirmar-form');
-// const invitado = document.querySelector('#numInvitados');
-// const nombres = document.querySelector('#nombreInvitados')
-
-
 
 // //isnserccion en la base de datos.
 
@@ -29,13 +25,24 @@ formulario.addEventListener('submit', e =>{
    const NumeroInvitados = formulario['addInvitado']
     const NombreInvitad = formulario['nombreInvitados']
 
-    insertar(NumeroInvitados.value, NombreInvitad.value);
-    formulario.reset();
+    if (NumeroInvitados.value === '' || NombreInvitad.value === '') {
 
-    Swal.fire(
-        'Gracias!',
-        'Los datos fueron registrados con exito!',
-        'success'
+      Swal.fire(
+        'Error!',
+        'Debes diligenciar todos los campos !',
+        'error'
       )
+    }else{
+      insertar(NumeroInvitados.value, NombreInvitad.value);
+      formulario.reset();
+  
+      Swal.fire(
+          'Gracias!',
+          'Los datos fueron registrados con exito!',
+          'success'
+        )
+    }
+
+   
 });
 
